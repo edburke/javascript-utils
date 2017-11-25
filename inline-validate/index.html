@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Inline form validation</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+</head>
+<body>
+    <div class="container">
+        <h5>Contact Information</h5>  
+        <form data-validate="">
+            <div class="row">
+                <div class="twelve columns">
+                    <label>Title</label>
+                    <select class="u-full-width">
+                        <option>Mr</option>
+                        <option>Mrs</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns">
+                    <label>First Name</label>
+                    <input class="u-full-width" type="text" data-validation-msg="Please enter your first name">
+                </div>
+            </div>
+            <div class="row">   
+                <div class="twelve columns">
+                    <label>Surname</label>
+                    <input class="u-full-width" type="text" data-validation-msg="Please enter your surname">
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns">
+                    <label>Email address</label>
+                    <input class="u-full-width" type="email" data-validation-type="email" data-validation-msg="Please enter a valid email address">
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns">
+                    <label>Confirm email address</label>
+                    <input class="u-full-width" type="email">
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns">
+                    <label>Phone number</label>
+                    <input class="u-full-width" type="text" data-validation-type="number" data-validation-msg="Please enter your phone number">
+                </div>
+            </div> 
+            <a class="button button-primary u-pull-right" href="#">Next</a>   
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/jquery/2.1.4/jquery.min.js"></script>
+    <script src="inline-validate.js"></script>
+</body>
+    
+</html>
